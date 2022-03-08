@@ -79,7 +79,9 @@ An app that will make deciding what to cook more efficient. The app will show a 
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+![Wireframe](https://user-images.githubusercontent.com/44296149/157292881-c5cc4854-29d3-4f59-a4b8-3e844ad68a2d.png)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
