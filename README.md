@@ -72,8 +72,8 @@ An app that will make deciding what to cook more efficient. The app will show a 
 
 **Flow Navigation** (Screen to Screen)
 
-* 
-   * [list screen navigation here]
+* Forced Log-in
+   * Register if they don't have an account
    * ...
 * [list second screen here]
    * [list screen navigation here]
