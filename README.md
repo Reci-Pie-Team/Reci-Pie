@@ -64,13 +64,15 @@ An app that will make deciding what to cook more efficient. The app will show a 
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Ingredients
+* Home
+* Post
+* Bookmark
+* Setting
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
+* 
    * [list screen navigation here]
    * ...
 * [list second screen here]
