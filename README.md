@@ -72,12 +72,11 @@ An app that will make deciding what to cook more efficient. The app will show a 
 
 **Flow Navigation** (Screen to Screen)
 
-* Forced Log-in
-   * Register if they don't have an account
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Forced Log-in -> Register if they don't have an account
+* Ingredients -> Ingredient search screen -> list of recipes -> Recipe detail screen
+* Post -> Create Recipe screen -> Recipe detail screen
+* Bookmark -> Bookmarked recipes screen -> Recipe detail screen
+* Setting -> Toggle settings
 
 ## Wireframes
 
