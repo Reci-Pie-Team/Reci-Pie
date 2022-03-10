@@ -1,0 +1,6 @@
+framework module Pods_Reci_Pie_Reci_PieUITests {
+  umbrella header "Pods-Reci-Pie-Reci-PieUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
