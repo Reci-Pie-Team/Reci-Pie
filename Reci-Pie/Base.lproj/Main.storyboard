@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="68.973214285714278"/>
         </scene>
-        <!--Home Page View Controller-->
+        <!--Home-->
         <scene sceneID="4bl-2o-n5U">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="5Dy-Qu-ByT" customClass="HomePageViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,7 +227,19 @@
                         <viewLayoutGuide key="safeArea" id="0lz-Yq-F1U"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qpc-ig-GbJ"/>
+                    <navigationItem key="navigationItem" title="Home" id="uUN-4r-Usl">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fxI-Zv-lM9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="j1z-hJ-8bc">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogoutButton:" destination="5Dy-Qu-ByT" eventType="touchUpInside" id="dxn-KQ-N1h"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbg-dY-fbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,7 +318,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="4HM-Fv-vfk">
             <objects>
-                <tabBarController id="1LI-WS-LH1" customClass="TabBarViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="1LI-WS-LH1" customClass="TabBarViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NJW-bE-VgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -346,7 +358,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mdj-je-jnP"/>
+        <segue reference="TXQ-pq-xjK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
