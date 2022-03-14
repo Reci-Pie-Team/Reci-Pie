@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3748A072C82406893D78E4C9 /* Pods_Reci_Pie_Reci_PieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6364FB249D3CEDD92659CA30 /* Pods_Reci_Pie_Reci_PieUITests.framework */; };
+		3B3956E527DEEE140063D629 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E427DEEE140063D629 /* LoginViewController.swift */; };
+		3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */; };
+		3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */; };
+		3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956EA27DF070C0063D629 /* RapidAPI.swift */; };
 		95DC37A459920178EA167F06 /* Pods_Reci_PieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */; };
 		B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029527CFD5630021A8B4 /* AppDelegate.swift */; };
 		B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029727CFD5630021A8B4 /* SceneDelegate.swift */; };
-		B96D029A27CFD5630021A8B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029927CFD5630021A8B4 /* ViewController.swift */; };
 		B96D029D27CFD5630021A8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96D029B27CFD5630021A8B4 /* Main.storyboard */; };
 		B96D029F27CFD5640021A8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96D029E27CFD5640021A8B4 /* Assets.xcassets */; };
 		B96D02A227CFD5640021A8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96D02A027CFD5640021A8B4 /* LaunchScreen.storyboard */; };
@@ -40,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_PieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3956E427DEEE140063D629 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		3B3956EA27DF070C0063D629 /* RapidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidAPI.swift; sourceTree = "<group>"; };
 		6364FB249D3CEDD92659CA30 /* Pods_Reci_Pie_Reci_PieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_Pie_Reci_PieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE2B123BB948BFE42726361 /* Pods_Reci_Pie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_Pie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2BB1357EB93681FB34008C /* Pods-Reci-Pie-Reci-PieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; path = "Target Support Files/Pods-Reci-Pie-Reci-PieUITests/Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +55,6 @@
 		B96D029227CFD5630021A8B4 /* Reci-Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reci-Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D029527CFD5630021A8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96D029727CFD5630021A8B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B96D029927CFD5630021A8B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B96D029C27CFD5630021A8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B96D029E27CFD5640021A8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B96D02A127CFD5640021A8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,11 +124,14 @@
 			children = (
 				B96D029527CFD5630021A8B4 /* AppDelegate.swift */,
 				B96D029727CFD5630021A8B4 /* SceneDelegate.swift */,
-				B96D029927CFD5630021A8B4 /* ViewController.swift */,
 				B96D029B27CFD5630021A8B4 /* Main.storyboard */,
 				B96D029E27CFD5640021A8B4 /* Assets.xcassets */,
 				B96D02A027CFD5640021A8B4 /* LaunchScreen.storyboard */,
 				B96D02A327CFD5640021A8B4 /* Info.plist */,
+				3B3956E427DEEE140063D629 /* LoginViewController.swift */,
+				3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */,
+				3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */,
+				3B3956EA27DF070C0063D629 /* RapidAPI.swift */,
 			);
 			path = "Reci-Pie";
 			sourceTree = "<group>";
@@ -164,7 +173,6 @@
 				E6E206D00B66FF3898FC9098 /* Pods-Reci-PieTests.debug.xcconfig */,
 				9D83B260EB69553D2EA32E06 /* Pods-Reci-PieTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,8 +415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96D029A27CFD5630021A8B4 /* ViewController.swift in Sources */,
+				3B3956E527DEEE140063D629 /* LoginViewController.swift in Sources */,
+				3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */,
+				3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */,
 				B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */,
+				3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */,
 				B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
