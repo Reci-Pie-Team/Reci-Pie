@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */; };
+		1D7FF92A27DFB49B005CEC48 /* BookmarkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */; };
+		1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */; };
 		3748A072C82406893D78E4C9 /* Pods_Reci_Pie_Reci_PieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6364FB249D3CEDD92659CA30 /* Pods_Reci_Pie_Reci_PieUITests.framework */; };
 		3B3956E527DEEE140063D629 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E427DEEE140063D629 /* LoginViewController.swift */; };
 		3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_PieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
+		1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedViewController.swift; sourceTree = "<group>"; };
+		1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3B3956E427DEEE140063D629 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 				3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */,
 				3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */,
 				3B3956EA27DF070C0063D629 /* RapidAPI.swift */,
+				1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */,
+				1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */,
+				1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */,
 			);
 			path = "Reci-Pie";
 			sourceTree = "<group>";
@@ -419,8 +428,11 @@
 				3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */,
 				3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */,
 				B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */,
+				1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */,
+				1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */,
 				3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */,
 				B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */,
+				1D7FF92A27DFB49B005CEC48 /* BookmarkedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

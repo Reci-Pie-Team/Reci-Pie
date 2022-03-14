@@ -25,7 +25,8 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //hides keyboard when tapping outside the keyboard
+        self.hideKeyboardWhenTappedAround()
     }
     
 
