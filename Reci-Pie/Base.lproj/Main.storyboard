@@ -217,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="68.973214285714278"/>
         </scene>
-        <!--Home-->
+        <!--Reci-Pie-->
         <scene sceneID="4bl-2o-n5U">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="5Dy-Qu-ByT" customClass="HomePageViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,9 +225,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="0lz-Yq-F1U"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="uUN-4r-Usl">
+                    <navigationItem key="navigationItem" title="Reci-Pie" largeTitleDisplayMode="always" id="uUN-4r-Usl">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="fxI-Zv-lM9">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="j1z-hJ-8bc">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
@@ -358,7 +358,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mdj-je-jnP"/>
+        <segue reference="TXQ-pq-xjK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
@@ -375,9 +375,6 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
