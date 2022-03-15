@@ -10,13 +10,39 @@ import Foundation
 
 class RapidAPI{
 
-    let headers = [
-        "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-        "x-rapidapi-key": "a3cf0ea13dmsh6713b67976a9ab0p12310fjsn1e563b3c0834"
-    ]
-
-    let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/images/analyze?imageUrl=https%3A%2F%2Fspoonacular.com%2FrecipeImages%2F635350-240x150.jpg")! as URL,cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
     
+    
+    func getAPI(request: NSMutableURLRequest, headers: [String:String]){
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse)
+            }
+        })
+
+        dataTask.resume()
+    }
+    
+    func visualizeNutrition() {
+        let headers = [
+            "accept": "text/html",
+            "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+            "x-rapidapi-key": "28575210ecmsha87dd5d0fd9ac22p11aa08jsn7908c981df58"
+        ]
+
+        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/products/%7Bid%7D/nutritionWidget")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        
+        getAPI(request: request, headers: headers)
+        
+    }
 }
     
     
