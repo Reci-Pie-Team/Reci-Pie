@@ -22,6 +22,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

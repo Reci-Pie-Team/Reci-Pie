@@ -12,7 +12,7 @@ class RapidAPI{
 
     
     
-    func getAPI(request: NSMutableURLRequest, headers: [String:String]){
+    func getAPI(request: NSMutableURLRequest, headers: [String:String])-> URLSession{
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
 
@@ -26,10 +26,12 @@ class RapidAPI{
             }
         })
 
-        dataTask.resume()
+        //dataTask.resume()
+        return session
+        
     }
     
-    func visualizeNutrition() {
+    func visualizeNutrition()->URLSession {
         let headers = [
             "accept": "text/html",
             "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
@@ -40,7 +42,7 @@ class RapidAPI{
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         
-        getAPI(request: request, headers: headers)
+        return getAPI(request: request, headers: headers)
         
     }
 }

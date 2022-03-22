@@ -181,10 +181,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-AY-neB">
-                                <rect key="frame" x="0.0" y="659" width="130" height="89"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yU4-7f-NTy">
+                                <rect key="frame" x="267" y="710" width="112" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get recipe"/>
+                                <connections>
+                                    <segue destination="uRB-MM-ga8" kind="presentation" id="thW-b0-fvX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GPU-K8-NAg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -202,6 +207,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfa-cm-t13" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628.985507246377" y="68.973214285714278"/>
+        </scene>
+        <!--Detailed View Controller-->
+        <scene sceneID="2Oj-aQ-wfh">
+            <objects>
+                <viewController id="uRB-MM-ga8" customClass="DetailedViewController" customModule="Reci_Pie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6a-46-sPc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QR-LC-voe">
+                                <rect key="frame" x="36" y="153" width="342" height="629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK7-0b-zPk">
+                                <rect key="frame" x="36" y="20" width="342" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6OY-Mr-yLy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SFI-Di-f6M"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="0QR-LC-voe" id="XdK-S3-IeW"/>
+                        <outlet property="titleLabel" destination="gK7-0b-zPk" id="5RQ-di-zmA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYW-7B-gNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3405.7971014492755" y="68.973214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wqz-0Q-fNK">
@@ -360,9 +401,28 @@
             </objects>
             <point key="canvasLocation" x="945" y="830"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nc4-Q6-Xsn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mzL-D4-fOe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U1E-gF-yaF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uRB-MM-ga8" kind="relationship" relationship="rootViewController" id="Ewj-Qv-tF6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppk-Mp-eYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2571" y="69"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="mdj-je-jnP"/>
+        <segue reference="thW-b0-fvX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>

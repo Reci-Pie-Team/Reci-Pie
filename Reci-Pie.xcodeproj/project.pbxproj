@@ -15,6 +15,7 @@
 		3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */; };
 		3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */; };
 		3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956EA27DF070C0063D629 /* RapidAPI.swift */; };
+		3BCBE85327E3A2D6001A660F /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBE85227E3A2D6001A660F /* DetailedViewController.swift */; };
 		95DC37A459920178EA167F06 /* Pods_Reci_PieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */; };
 		B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029527CFD5630021A8B4 /* AppDelegate.swift */; };
 		B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029727CFD5630021A8B4 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		3B3956EA27DF070C0063D629 /* RapidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidAPI.swift; sourceTree = "<group>"; };
+		3BCBE85227E3A2D6001A660F /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		6364FB249D3CEDD92659CA30 /* Pods_Reci_Pie_Reci_PieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_Pie_Reci_PieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE2B123BB948BFE42726361 /* Pods_Reci_Pie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_Pie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2BB1357EB93681FB34008C /* Pods-Reci-Pie-Reci-PieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; path = "Target Support Files/Pods-Reci-Pie-Reci-PieUITests/Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */,
 				1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */,
 				1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */,
+				3BCBE85227E3A2D6001A660F /* DetailedViewController.swift */,
 			);
 			path = "Reci-Pie";
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			files = (
 				3B3956E527DEEE140063D629 /* LoginViewController.swift in Sources */,
 				3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */,
+				3BCBE85327E3A2D6001A660F /* DetailedViewController.swift in Sources */,
 				3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */,
 				B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */,
 				1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */,
@@ -612,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9WP8VLRBJ;
+				DEVELOPMENT_TEAM = 969HAQ982U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Reci-Pie/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -625,7 +629,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.morfin.Reci-Pie";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Reci-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -641,7 +645,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9WP8VLRBJ;
+				DEVELOPMENT_TEAM = 969HAQ982U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Reci-Pie/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -654,7 +658,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.morfin.Reci-Pie";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Reci-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
