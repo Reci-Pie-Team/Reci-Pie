@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7011AC27E9149900752D19 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */; };
 		1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */; };
 		1D7FF92A27DFB49B005CEC48 /* BookmarkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */; };
 		1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_PieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedViewController.swift; sourceTree = "<group>"; };
 		1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */,
 				1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */,
 				1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */,
+				1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */,
 			);
 			path = "Reci-Pie";
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */,
 				B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */,
 				1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */,
+				1D7011AC27E9149900752D19 /* HomeCollectionViewCell.swift in Sources */,
 				1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */,
 				3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */,
 				B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */,
