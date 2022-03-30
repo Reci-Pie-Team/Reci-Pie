@@ -23,12 +23,6 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         let title = recipe["title"] as! String
         let image = recipe["image"] as! String
         let imageUrl = URL(string: image)
-        /*let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let imagePath = recipe["image_path"] as! String
-        let imageUrl = URL(string: baseUrl + imagePath)
-        */
-       // cell.recipeImageView.af.setImage(withURL: imageUrl!)
-       // let title = recipes["title"] as! String
         
         cell.recipeImageView.af.setImage(withURL: imageUrl!)
         cell.RecipeNameLabel.text = title
@@ -53,7 +47,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
             "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
             "x-rapidapi-key": "28575210ecmsha87dd5d0fd9ac22p11aa08jsn7908c981df58"
         ]
-        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=16&limitLicense=true")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1&limitLicense=true")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         request.httpMethod = "GET"
@@ -77,6 +71,23 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
             }
         })
         dataTask.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+
+        print("Loading up the details screen")
+        
+        //Find the selected movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = HomeCollectionView.indexPath(for: cell)!
+        let recipe = recipes[indexPath.row]
+        
+        // Pass the selected object to the new view controller.
+        let detailsViewController = segue.destination as! DetailsViewController
+        detailsViewController.recipe = recipe
+        
+        //HomeCollectionView.deselectRow(at: indexPath, animated: true)
     }
     
     
