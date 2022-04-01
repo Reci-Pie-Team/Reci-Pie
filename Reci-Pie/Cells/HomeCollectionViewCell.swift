@@ -11,7 +11,6 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var recipeImageView: UIImageView!
-    
     @IBOutlet weak var RecipeNameLabel: UILabel!
     
     

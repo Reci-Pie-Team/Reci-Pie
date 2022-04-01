@@ -45,7 +45,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         let headers = [
             "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-            "x-rapidapi-key": "28575210ecmsha87dd5d0fd9ac22p11aa08jsn7908c981df58"
+            "x-rapidapi-key": "b1d07f8c85msh934d677d78dbc2ap163aa0jsn0e783f5e6216"
         ]
         let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1&limitLicense=true")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,

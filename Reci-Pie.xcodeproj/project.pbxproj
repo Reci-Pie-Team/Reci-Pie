@@ -21,6 +21,7 @@
 		3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */; };
 		3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956EA27DF070C0063D629 /* RapidAPI.swift */; };
 		95DC37A459920178EA167F06 /* Pods_Reci_PieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */; };
+		B95B067127F6CA060080E607 /* IngredientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B067027F6CA060080E607 /* IngredientsCollectionViewCell.swift */; };
 		B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029527CFD5630021A8B4 /* AppDelegate.swift */; };
 		B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029727CFD5630021A8B4 /* SceneDelegate.swift */; };
 		B96D029D27CFD5630021A8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96D029B27CFD5630021A8B4 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		8E2BB1357EB93681FB34008C /* Pods-Reci-Pie-Reci-PieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; path = "Target Support Files/Pods-Reci-Pie-Reci-PieUITests/Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9816CDE089734EB8FC86DD29 /* Pods-Reci-Pie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-Pie.release.xcconfig"; path = "Target Support Files/Pods-Reci-Pie/Pods-Reci-Pie.release.xcconfig"; sourceTree = "<group>"; };
 		9D83B260EB69553D2EA32E06 /* Pods-Reci-PieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-PieTests.release.xcconfig"; path = "Target Support Files/Pods-Reci-PieTests/Pods-Reci-PieTests.release.xcconfig"; sourceTree = "<group>"; };
+		B95B067027F6CA060080E607 /* IngredientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B96D029227CFD5630021A8B4 /* Reci-Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reci-Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D029527CFD5630021A8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96D029727CFD5630021A8B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				1D26506E27F24B9500522D3F /* DetailsCell.swift */,
 				1D26507027F24BAD00522D3F /* DetailsIngredientCell.swift */,
 				1D26507227F24BFB00522D3F /* DetailsInstructionCell.swift */,
+				B95B067027F6CA060080E607 /* IngredientsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				1D26507127F24BAD00522D3F /* DetailsIngredientCell.swift in Sources */,
 				3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */,
 				B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */,
+				B95B067127F6CA060080E607 /* IngredientsCollectionViewCell.swift in Sources */,
 				1D7FF92A27DFB49B005CEC48 /* BookmarkedViewController.swift in Sources */,
 				1D26507327F24BFB00522D3F /* DetailsInstructionCell.swift in Sources */,
 			);
