@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -20,12 +21,15 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let title = recipe["title"] as! String
         let instructions = recipe["instructions"] as! String
+        let recipeId = recipe["id"] as! Int
+        let time = recipe["readyInMinutes"] as! Int
         let ingredients = recipe["extendedIngredients"] as? [[String:Any]]
         let image = recipe["image"] as! String
         let imageUrl = URL(string: image)
         if indexPath.row == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell") as! DetailsCell
         
+        cell.id = recipeId
         cell.detailsTitleLabel.text = title
         cell.detailsImageView.af_setImage(withURL: imageUrl!)
             
@@ -34,20 +38,27 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsIngredientCell") as! DetailsIngredientCell
             
             let ingredient = ingredients?[indexPath.row - 1]
-            let ingredientName = ingredient?["originalName"] as! String
-            //print(ingredientName)
-            cell.ingredientsLabel.text = ingredientName
+            let ingredientName = ingredient?["name"] as! String
+            let ingredientUnit = ingredient?["unit"] as! String
+            let ingredientAmount = ingredient?["amount"] as! NSNumber
+
+            let fullIngredient = ingredientAmount.stringValue + " " + ingredientUnit + " " + ingredientName
+            
+            cell.ingredientLabel.text = fullIngredient
             
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsInstructionCell") as! DetailsInstructionCell
             
+            let timeString = "Ready in " + String(time) + " minutes"
+            cell.timeLabel.text = timeString
             cell.instructionsLabel.text = instructions
             
             
             return cell
         }
     }
+    
     
     
     @IBOutlet weak var detailsTableView: UITableView!
@@ -62,16 +73,5 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         detailsTableView.estimatedRowHeight = 600
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

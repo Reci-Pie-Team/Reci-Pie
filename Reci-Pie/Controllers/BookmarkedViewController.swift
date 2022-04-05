@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Parse
+import AlamofireImage
 
-class BookmarkedViewController: UIViewController {
-
+class BookmarkedViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()

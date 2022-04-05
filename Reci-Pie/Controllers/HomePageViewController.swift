@@ -22,6 +22,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         let recipe = recipes[indexPath.row]
         let title = recipe["title"] as! String
         let image = recipe["image"] as! String
+        
         let imageUrl = URL(string: image)
         
         cell.recipeImageView.af.setImage(withURL: imageUrl!)
@@ -44,10 +45,11 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         let headers = [
-            "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-            "x-rapidapi-key": "28575210ecmsha87dd5d0fd9ac22p11aa08jsn7908c981df58"
+            "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+            "X-RapidAPI-Key": "004c37dd5cmsh9aab957ca1366a7p1202b5jsna52015101f56"
         ]
-        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1&limitLicense=true")! as URL,
+
+        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         request.httpMethod = "GET"
