@@ -105,3 +105,5 @@ An app that will make deciding what to cook more efficient. The app will show a 
 ## Sprint 2 Walkthrough:
 ![](https://user-images.githubusercontent.com/89062545/159425017-946762de-7082-4ec6-b9b7-da3424560dae.gif)
 
+## Sprint 2 Walkthrough:
+![](https://i.imgur.com/2qQydKh.gif)
