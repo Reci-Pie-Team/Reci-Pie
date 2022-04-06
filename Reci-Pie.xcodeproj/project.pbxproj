@@ -12,6 +12,7 @@
 		1D26507127F24BAD00522D3F /* DetailsIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26507027F24BAD00522D3F /* DetailsIngredientCell.swift */; };
 		1D26507327F24BFB00522D3F /* DetailsInstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26507227F24BFB00522D3F /* DetailsInstructionCell.swift */; };
 		1D3C030F27F81405002ADFF1 /* BookmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C030E27F81405002ADFF1 /* BookmarkCollectionViewCell.swift */; };
+		1D3C031127FC2962002ADFF1 /* Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C031027FC2962002ADFF1 /* Bookmarks.swift */; };
 		1D63B96E27F6D301004395CD /* IngredientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63B96D27F6D301004395CD /* IngredientsCollectionViewCell.swift */; };
 		1D7011AC27E9149900752D19 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */; };
 		1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */; };
@@ -58,6 +59,7 @@
 		1D26507027F24BAD00522D3F /* DetailsIngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsIngredientCell.swift; sourceTree = "<group>"; };
 		1D26507227F24BFB00522D3F /* DetailsInstructionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInstructionCell.swift; sourceTree = "<group>"; };
 		1D3C030E27F81405002ADFF1 /* BookmarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D3C031027FC2962002ADFF1 /* Bookmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmarks.swift; sourceTree = "<group>"; };
 		1D63B96D27F6D301004395CD /* IngredientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				B96D029E27CFD5640021A8B4 /* Assets.xcassets */,
 				B96D02A327CFD5640021A8B4 /* Info.plist */,
 				3B3956EA27DF070C0063D629 /* RapidAPI.swift */,
+				1D3C031027FC2962002ADFF1 /* Bookmarks.swift */,
 			);
 			path = "Reci-Pie";
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */,
 				1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */,
 				1D26506F27F24B9500522D3F /* DetailsCell.swift in Sources */,
+				1D3C031127FC2962002ADFF1 /* Bookmarks.swift in Sources */,
 				1D7011AC27E9149900752D19 /* HomeCollectionViewCell.swift in Sources */,
 				1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */,
 				1D26507127F24BAD00522D3F /* DetailsIngredientCell.swift in Sources */,

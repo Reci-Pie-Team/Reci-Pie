@@ -16,7 +16,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         return ingredients.count + 2
     }
     
-    var recipe: [String:Any]!
+    var recipe = [String: Any]()
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let title = recipe["title"] as! String
@@ -25,6 +25,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let time = recipe["readyInMinutes"] as! Int
         let ingredients = recipe["extendedIngredients"] as? [[String:Any]]
         let image = recipe["image"] as! String
+        
         let imageUrl = URL(string: image)
         if indexPath.row == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell") as! DetailsCell
@@ -38,13 +39,14 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsIngredientCell") as! DetailsIngredientCell
             
             let ingredient = ingredients?[indexPath.row - 1]
-            let ingredientName = ingredient?["name"] as! String
-            let ingredientUnit = ingredient?["unit"] as! String
-            let ingredientAmount = ingredient?["amount"] as! NSNumber
+            //let ingredientName = ingredient?["name"] as! String
+            //let ingredientUnit = ingredient?["unit"] as! String
+            //fix format String(format:"%a",x)
+            let ingredientAmount = ingredient?["original"] as! String
 
-            let fullIngredient = ingredientAmount.stringValue + " " + ingredientUnit + " " + ingredientName
+            //let fullIngredient = ingredientAmount.stringValue + " " + ingredientUnit + " " + ingredientName
             
-            cell.ingredientLabel.text = fullIngredient
+            cell.ingredientLabel.text = ingredientAmount
             
             return cell
         } else {
