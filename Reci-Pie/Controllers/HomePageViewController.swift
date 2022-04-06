@@ -43,34 +43,39 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         layout.minimumInteritemSpacing = 4
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
-        let headers = [
-            "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-            "x-rapidapi-key": "b1d07f8c85msh934d677d78dbc2ap163aa0jsn0e783f5e6216"
-        ]
-        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1&limitLicense=true")! as URL,
-                                                cachePolicy: .useProtocolCachePolicy,
-                                            timeoutInterval: 10.0)
-        request.httpMethod = "GET"
-        request.allHTTPHeaderFields = headers
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: {(data, response, error)
-            -> Void in
-            if (error != nil) {
-                print(error)
-            } else {
-                do {
-                    if let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-                        self.recipes = dataDictionary["recipes"] as! [[String:Any]]
-                        Dispatch.DispatchQueue.main.async {
-                            self.HomeCollectionView.reloadData()
-                        }
-                    
-                    }} catch let error as NSError{
-                print(error.localizedDescription)
-                }
-            }
-        })
-        dataTask.resume()
+
+//        let headers = [
+//            "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+//            "x-rapidapi-key": "b1d07f8c85msh934d677d78dbc2ap163aa0jsn0e783f5e6216"
+//        ]
+//        let request = NSMutableURLRequest(url: NSURL(string: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/autocomplete?query=appl&number=1&intolerances=egg")! as URL,
+//                                                cachePolicy: .useProtocolCachePolicy,
+//                                            timeoutInterval: 10.0)
+////    https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1&limitLicense=true
+//
+//        request.httpMethod = "GET"
+//        request.allHTTPHeaderFields = headers
+//        let session = URLSession.shared
+//        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: {(data, response, error)
+//            -> Void in
+//            if (error != nil) {
+//                print(error)
+//            } else {
+//                do {
+//                    if let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+//                        print(dataDictionary)
+//                        self.recipes = dataDictionary["recipes"] as! [[String:Any]]
+//
+//                        Dispatch.DispatchQueue.main.async {
+//                            self.HomeCollectionView.reloadData()
+//                        }
+//
+//                    }} catch let error as NSError{
+//                print(error.localizedDescription)
+//                }
+//            }
+//        })
+//        dataTask.resume()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
