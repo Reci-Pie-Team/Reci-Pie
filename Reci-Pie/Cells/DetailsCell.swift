@@ -16,15 +16,16 @@ class DetailsCell: UITableViewCell {
     @IBOutlet weak var bookmarkButton: UIButton!
     var bookmarked: Bool = false
     var id = 0
+    var count = 0
     
     func setBookmarked(_ isBookmarked: Bool){
         bookmarked = isBookmarked
         if(bookmarked){
-            bookmarkButton.setImage(UIImage(systemName:"bookmark"), for: UIControl.State.normal)
-            print("Unbookmarked Pressed")
-        } else {
             bookmarkButton.setImage(UIImage(systemName:"bookmark.fill"), for: UIControl.State.normal)
             print("Bookmarked Pressed")
+        } else {
+            bookmarkButton.setImage(UIImage(systemName:"bookmark"), for: UIControl.State.normal)
+            print("Unbookmarked Pressed")
         }
     }
     
@@ -32,18 +33,34 @@ class DetailsCell: UITableViewCell {
     let bookmarks = Bookmarks()
     var results = [PFObject]()
     
+    
     @IBAction func onBookmarkButton(_ sender: Any) {
         let query = PFQuery(className:"Bookmarks")
         let user = PFUser.current()?.objectId
         print(user!)
         print(bookmarks.user)
-        //query.whereKey(bookmarks.user , equalTo: user!)
-        do {
-            let results: [PFObject] = try query.findObjects()
-            print(bookmarks.recipe)
-        } catch {
-            print(error)
-        }
+        query.whereKey("user" , equalTo: user!)
+        query.whereKey("recipe" , equalTo: id )
+        query.countObjectsInBackground { (i: Int32, error: Error?) in
+                        if let error = error {
+                            // The request failed
+                            print(error.localizedDescription)
+                        } else {
+                            self.count = Int(i)
+                            print("\(self.count) objects found!")
+                        }
+                    }
+//        query.findObjectsInBackground { (objects, error) -> Void in
+//            if error == nil {
+//                if let returnedObjects = objects {
+//                    for object in returnedObjects {
+//                        print(object["recipe"] as! Int)
+//                        //delete the object
+//                        //object!.deleteInBackground
+//                    }
+//                }
+//            }
+//        }
 //        query.countObjectsInBackground { (count: Int32, error: Error?) in
 //            if let error = error {
 //                // The request failed
@@ -56,10 +73,7 @@ class DetailsCell: UITableViewCell {
         //let result = results["recipe"]
         //let result = results["recipe"]
         
-        let isBookmarked = !bookmarked
-        
-        
-        if (isBookmarked) {
+        if (count == 0) {
 //            bookmarks["user"] = PFUser.current()
             bookmarks.user = (PFUser.current()?.objectId)!
 //            bookmarks["recipe"] = id
