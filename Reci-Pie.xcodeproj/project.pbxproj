@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D26506D27F24AC500522D3F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26506C27F24AC500522D3F /* DetailsViewController.swift */; };
+		1D26506F27F24B9500522D3F /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26506E27F24B9500522D3F /* DetailsCell.swift */; };
+		1D26507127F24BAD00522D3F /* DetailsIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26507027F24BAD00522D3F /* DetailsIngredientCell.swift */; };
+		1D26507327F24BFB00522D3F /* DetailsInstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26507227F24BFB00522D3F /* DetailsInstructionCell.swift */; };
+		1D7011AC27E9149900752D19 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */; };
 		1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */; };
 		1D7FF92A27DFB49B005CEC48 /* BookmarkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */; };
 		1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */; };
@@ -16,6 +21,8 @@
 		3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */; };
 		3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956EA27DF070C0063D629 /* RapidAPI.swift */; };
 		95DC37A459920178EA167F06 /* Pods_Reci_PieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */; };
+		B95B067127F6CA060080E607 /* IngredientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B067027F6CA060080E607 /* IngredientsCollectionViewCell.swift */; };
+		B95B067327FA75570080E607 /* ingredientstruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B067227FA75570080E607 /* ingredientstruct.swift */; };
 		B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029527CFD5630021A8B4 /* AppDelegate.swift */; };
 		B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D029727CFD5630021A8B4 /* SceneDelegate.swift */; };
 		B96D029D27CFD5630021A8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96D029B27CFD5630021A8B4 /* Main.storyboard */; };
@@ -46,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		124E4C2D7BCA4815D317E77C /* Pods_Reci_PieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reci_PieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D26506C27F24AC500522D3F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		1D26506E27F24B9500522D3F /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		1D26507027F24BAD00522D3F /* DetailsIngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsIngredientCell.swift; sourceTree = "<group>"; };
+		1D26507227F24BFB00522D3F /* DetailsInstructionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInstructionCell.swift; sourceTree = "<group>"; };
+		1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedViewController.swift; sourceTree = "<group>"; };
 		1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +70,8 @@
 		8E2BB1357EB93681FB34008C /* Pods-Reci-Pie-Reci-PieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; path = "Target Support Files/Pods-Reci-Pie-Reci-PieUITests/Pods-Reci-Pie-Reci-PieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9816CDE089734EB8FC86DD29 /* Pods-Reci-Pie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-Pie.release.xcconfig"; path = "Target Support Files/Pods-Reci-Pie/Pods-Reci-Pie.release.xcconfig"; sourceTree = "<group>"; };
 		9D83B260EB69553D2EA32E06 /* Pods-Reci-PieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reci-PieTests.release.xcconfig"; path = "Target Support Files/Pods-Reci-PieTests/Pods-Reci-PieTests.release.xcconfig"; sourceTree = "<group>"; };
+		B95B067027F6CA060080E607 /* IngredientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B95B067227FA75570080E607 /* ingredientstruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientstruct.swift; sourceTree = "<group>"; };
 		B96D029227CFD5630021A8B4 /* Reci-Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reci-Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D029527CFD5630021A8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96D029727CFD5630021A8B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +117,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D26505F27F233DB00522D3F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B96D02A027CFD5640021A8B4 /* LaunchScreen.storyboard */,
+				B96D029B27CFD5630021A8B4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1D26506027F2342000522D3F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1D7011AB27E9149900752D19 /* HomeCollectionViewCell.swift */,
+				1D26506E27F24B9500522D3F /* DetailsCell.swift */,
+				1D26507027F24BAD00522D3F /* DetailsIngredientCell.swift */,
+				1D26507227F24BFB00522D3F /* DetailsInstructionCell.swift */,
+				B95B067027F6CA060080E607 /* IngredientsCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1D26506127F2345400522D3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */,
+				1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */,
+				1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */,
+				3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */,
+				3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */,
+				3B3956E427DEEE140063D629 /* LoginViewController.swift */,
+				1D26506C27F24AC500522D3F /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B96D028927CFD5630021A8B4 = {
 			isa = PBXGroup;
 			children = (
@@ -128,19 +177,15 @@
 		B96D029427CFD5630021A8B4 /* Reci-Pie */ = {
 			isa = PBXGroup;
 			children = (
+				1D26506127F2345400522D3F /* Controllers */,
+				1D26506027F2342000522D3F /* Cells */,
+				1D26505F27F233DB00522D3F /* Storyboards */,
 				B96D029527CFD5630021A8B4 /* AppDelegate.swift */,
 				B96D029727CFD5630021A8B4 /* SceneDelegate.swift */,
-				B96D029B27CFD5630021A8B4 /* Main.storyboard */,
 				B96D029E27CFD5640021A8B4 /* Assets.xcassets */,
-				B96D02A027CFD5640021A8B4 /* LaunchScreen.storyboard */,
 				B96D02A327CFD5640021A8B4 /* Info.plist */,
-				3B3956E427DEEE140063D629 /* LoginViewController.swift */,
-				3B3956E627DEEEAF0063D629 /* RegisterViewController.swift */,
-				3B3956E827DEF7DF0063D629 /* HomePageViewController.swift */,
 				3B3956EA27DF070C0063D629 /* RapidAPI.swift */,
-				1D7FF92727DFB469005CEC48 /* IngredientsViewController.swift */,
-				1D7FF92927DFB49B005CEC48 /* BookmarkedViewController.swift */,
-				1DED7CA827DFCCF000ED7A52 /* TabBarViewController.swift */,
+				B95B067227FA75570080E607 /* ingredientstruct.swift */,
 			);
 			path = "Reci-Pie";
 			sourceTree = "<group>";
@@ -427,12 +472,19 @@
 				3B3956E527DEEE140063D629 /* LoginViewController.swift in Sources */,
 				3B3956EB27DF070C0063D629 /* RapidAPI.swift in Sources */,
 				3B3956E727DEEEAF0063D629 /* RegisterViewController.swift in Sources */,
+				1D26506D27F24AC500522D3F /* DetailsViewController.swift in Sources */,
 				B96D029627CFD5630021A8B4 /* AppDelegate.swift in Sources */,
 				1DED7CA927DFCCF000ED7A52 /* TabBarViewController.swift in Sources */,
+				1D26506F27F24B9500522D3F /* DetailsCell.swift in Sources */,
+				1D7011AC27E9149900752D19 /* HomeCollectionViewCell.swift in Sources */,
 				1D7FF92827DFB469005CEC48 /* IngredientsViewController.swift in Sources */,
+				1D26507127F24BAD00522D3F /* DetailsIngredientCell.swift in Sources */,
 				3B3956E927DEF7DF0063D629 /* HomePageViewController.swift in Sources */,
 				B96D029827CFD5630021A8B4 /* SceneDelegate.swift in Sources */,
+				B95B067127F6CA060080E607 /* IngredientsCollectionViewCell.swift in Sources */,
 				1D7FF92A27DFB49B005CEC48 /* BookmarkedViewController.swift in Sources */,
+				1D26507327F24BFB00522D3F /* DetailsInstructionCell.swift in Sources */,
+				B95B067327FA75570080E607 /* ingredientstruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
