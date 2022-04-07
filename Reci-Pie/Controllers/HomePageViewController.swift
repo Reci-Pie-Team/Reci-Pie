@@ -44,6 +44,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         layout.minimumInteritemSpacing = 4
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+
         let headers = [
             "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
             "X-RapidAPI-Key": "004c37dd5cmsh9aab957ca1366a7p1202b5jsna52015101f56"
@@ -73,6 +74,8 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
             }
         })
         dataTask.resume()
+
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

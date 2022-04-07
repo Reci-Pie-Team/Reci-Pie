@@ -58,7 +58,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             
             return cell
-        }
+        } 
     }
     
     

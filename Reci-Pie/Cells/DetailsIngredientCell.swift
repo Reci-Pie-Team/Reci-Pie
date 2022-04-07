@@ -12,6 +12,7 @@ class DetailsIngredientCell: UITableViewCell {
     
     @IBOutlet weak var ingredientLabel: UILabel!
     
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
