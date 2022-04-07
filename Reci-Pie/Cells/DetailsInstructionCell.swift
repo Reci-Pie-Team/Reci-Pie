@@ -12,6 +12,9 @@ class DetailsInstructionCell: UITableViewCell {
     
     @IBOutlet weak var instructionsLabel: UILabel!
     
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

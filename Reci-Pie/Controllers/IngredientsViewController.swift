@@ -9,10 +9,14 @@ import UIKit
 import AlamofireImage
 
 
+
 class ResultsVC: UIViewController {
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
 
     }
 }
@@ -30,6 +34,7 @@ class IngredientsViewController: UIViewController,UISearchResultsUpdating,UIColl
     var searchResults = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         //implement searchBar
         title = "Search"
@@ -156,6 +161,7 @@ class IngredientsViewController: UIViewController,UISearchResultsUpdating,UIColl
        //    print(text)
         // ingredientsCollectionView.reloadData()
        // print(searchResults)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -164,6 +170,7 @@ class IngredientsViewController: UIViewController,UISearchResultsUpdating,UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IngredientsCollectionViewCell", for: indexPath) as! IngredientsCollectionViewCell
+
         let imageUrl = URL(string: ingredients[indexPath.row].image)
        //let image = recipe["image"] as! String
       //cell.ingredientImage = ingredients[indexPath.row].image
@@ -177,7 +184,9 @@ class IngredientsViewController: UIViewController,UISearchResultsUpdating,UIColl
         
         return cell
     }
+
     
+
 
 
 }
