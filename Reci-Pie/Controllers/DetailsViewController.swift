@@ -16,6 +16,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     var recipe: [String:Any]!
+    var information: [String:Any]!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let title = recipe["title"] as! String

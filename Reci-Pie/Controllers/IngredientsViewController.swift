@@ -23,7 +23,7 @@ class IngredientsViewController: UIViewController,UISearchResultsUpdating,UIColl
     
    // var recipe = [[ingredientstruct]]()
     var muIngredients = ""
-    
+    var id = Int()
     
     let searchController = UISearchController(searchResultsController: nil)
     var ingredients = [ingredientstruct]()
@@ -168,10 +168,12 @@ class IngredientsViewController: UIViewController,UISearchResultsUpdating,UIColl
        //let image = recipe["image"] as! String
       //cell.ingredientImage = ingredients[indexPath.row].image
         
+        id = ingredients[indexPath.row].id
         cell.ingredientLabel.text = ingredients[indexPath.row].title.capitalized
         cell.ingredientImage.contentMode = .scaleAspectFill
         cell.ingredientImage.af.setImage(withURL: imageUrl!)
-    
+        print("ID: \(id)")
+        
         //cell.ingredientLabel.text = ingredients[""] as! String
         
         
