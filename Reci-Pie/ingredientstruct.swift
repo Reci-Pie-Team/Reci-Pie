@@ -10,6 +10,7 @@ import Foundation
 struct ingredientstruct:Decodable {
     let title: String
     let image: String
+    let id: Int
    // let usedIngredients: String
     
 }

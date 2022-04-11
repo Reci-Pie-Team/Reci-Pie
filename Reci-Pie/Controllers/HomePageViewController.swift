@@ -87,10 +87,11 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = sender as! UICollectionViewCell
         let indexPath = HomeCollectionView.indexPath(for: cell)!
         let recipe = recipes[indexPath.row]
+        let id = recipe["id"] as! Int
         
         // Pass the selected object to the new view controller.
         let detailsViewController = segue.destination as! DetailsViewController
-        detailsViewController.recipe = recipe
+        detailsViewController.id = id
         
         //HomeCollectionView.deselectRow(at: indexPath, animated: true)
     }
